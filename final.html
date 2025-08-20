@@ -352,5 +352,168 @@
         </div>
       </div>
     </section>
+
+    <section class="bg-black text-white py-16 px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">What People Say</h2>
+      <div class="relative max-w-3xl mx-auto overflow-hidden">
+        <!-- Testimonials container -->
+        <div
+          id="testimonials-container"
+          class="flex transition-transform duration-700 ease-in-out"
+        >
+          <!-- Testimonial cards -->
+          <div class="min-w-full p-8 text-center">
+            <p class="text-lg italic mb-6">
+              "Savigen AI has transformed the way we approach data-driven
+              research. Truly innovative!"
+            </p>
+            <h4 class="text-xl font-semibold">Dr. Jane Smith</h4>
+            <span class="text-gray-400">AI Researcher</span>
+          </div>
+          <div class="min-w-full p-8 text-center">
+            <p class="text-lg italic mb-6">
+              "The professionalism and scientific approach of Savigen AI is
+              unmatched."
+            </p>
+            <h4 class="text-xl font-semibold">John Doe</h4>
+            <span class="text-gray-400">Tech Entrepreneur</span>
+          </div>
+          <div class="min-w-full p-8 text-center">
+            <p class="text-lg italic mb-6">
+              "Working with Savigen AI boosted our efficiency and accuracy in AI
+              projects."
+            </p>
+            <h4 class="text-xl font-semibold">Emily Carter</h4>
+            <span class="text-gray-400">Data Scientist</span>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button
+          id="prev"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 rounded-r-lg hover:bg-gray-700"
+        >
+          ‹
+        </button>
+        <button
+          id="next"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 rounded-l-lg hover:bg-gray-700"
+        >
+          ›
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-black text-gray-300 py-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <h2 class="text-2xl font-bold text-white">Savigen AI</h2>
+          <p class="mt-4 text-sm text-gray-400 leading-relaxed">
+            Innovating the future with Artificial Intelligence. We design
+            intelligent solutions that empower businesses worldwide.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-white transition">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition">Our Services</a>
+            </li>
+            <li><a href="#" class="hover:text-white transition">Careers</a></li>
+            <li><a href="#" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition">Case Studies</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition">Research</a>
+            </li>
+            <li><a href="#" class="hover:text-white transition">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Get in Touch</h3>
+          <p class="text-sm text-gray-400">
+            Email:
+            <a href="mailto:info@savigen.ai" class="hover:text-white"
+              >info@savigen.ai</a
+            >
+          </p>
+          <p class="text-sm text-gray-400 mt-2">Phone: +91 98765 43210</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-linkedin text-xl"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-twitter text-xl"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-github text-xl"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div
+        class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500"
+      >
+        © 2025 Savigen AI. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      const container = document.getElementById("testimonials-container");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+      const total = container.children.length;
+      let index = 0;
+
+      function updateSlider() {
+        container.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      // Auto-slide every 4 seconds
+      let autoSlide = setInterval(() => {
+        index = (index + 1) % total;
+        updateSlider();
+      }, 4000);
+
+      // Arrow click navigation
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + total) % total;
+        updateSlider();
+        resetAutoSlide();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % total;
+        updateSlider();
+        resetAutoSlide();
+      });
+
+      function resetAutoSlide() {
+        clearInterval(autoSlide);
+        autoSlide = setInterval(() => {
+          index = (index + 1) % total;
+          updateSlider();
+        }, 4000);
+      }
+    </script>
   </body>
 </html>
