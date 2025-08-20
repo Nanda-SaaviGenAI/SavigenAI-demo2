@@ -1,340 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaaviGen.AI - Unlock GenAI Productivity Safely, Responsibly, and Compliantly</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Navigation -->
-    <header class="header" id="header">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav__wrapper">
-                    <div class="nav__brand">
-                        <a href="#home" class="nav__logo">SaaviGen.AI</a>
-                    </div>
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#home" class="nav__link">Home</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#about" class="nav__link">About</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#services" class="nav__link">Services</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#why-choose-us" class="nav__link">Why Choose Us</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#contact" class="nav__link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-black text-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold tracking-wide">
+          Savigen<span class="text-gray-400">AI</span>
+        </div>
+
+        <!-- Links -->
+        <ul class="hidden md:flex space-x-8 text-lg font-medium">
+          <li><a href="#" class="hover:text-gray-400 transition">Home</a></li>
+          <li>
+            <a href="#about" class="hover:text-gray-400 transition">About</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-gray-400 transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-gray-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a
+          href="#contact"
+          class="hidden md:inline-block border border-white px-4 py-2 rounded-lg hover:bg-gray-100 hover:text-black transition"
+        >
+          Get Started
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white focus:outline-none">
+          <!-- Icon (3 bars) -->
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero__content">
-                <div class="hero__text">
-                    <h1 class="hero__title">Unlock GenAI Productivity — Safely, Responsibly, and Compliantly.</h1>
-                    <p class="hero__subtitle">
-                        We help organizations harness the power of Generative AI through practical training, corporate upskilling, and compliance readiness programs. From fresh graduates to seasoned professionals, SaaviGen.AI builds the skills and safeguards needed for the AI-powered future.
-                    </p>
-                    <div class="hero__cta">
-                        <button class="btn btn--primary btn--lg cta-btn" data-action="training">Book Corporate Training</button>
-                        <button class="btn btn--outline btn--lg cta-btn" data-action="compliance">Request a Compliance Readiness Check</button>
-                    </div>
-                </div>
-                <div class="hero__visual">
-                    <div class="hero__graphic">
-                        <div class="ai-brain">
-                            <div class="brain-core"></div>
-                            <div class="neural-network">
-                                <div class="node node-1"></div>
-                                <div class="node node-2"></div>
-                                <div class="node node-3"></div>
-                                <div class="node node-4"></div>
-                                <div class="connection connection-1"></div>
-                                <div class="connection connection-2"></div>
-                                <div class="connection connection-3"></div>
-                            </div>
-                        </div>
-                        <div class="human-element">
-                            <div class="user-icon">👤</div>
-                            <div class="collaboration-line"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="bg-black text-white">
+      <div
+        class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left: Text -->
+        <div>
+          <h1 class="text-5xl font-bold leading-tight mb-6">
+            Powering Businesses with
+            <span class="text-gray-300">AI Innovation</span>
+          </h1>
+          <p class="text-lg text-gray-400 mb-8">
+            Savigen AI helps companies unlock the potential of Artificial
+            Intelligence to automate workflows, make smarter decisions, and
+            scale efficiently.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#services"
+              class="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition"
+            >
+              Get Started
+            </a>
+            <a
+              href="#about"
+              class="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-black transition"
+            >
+              Learn More
+            </a>
+          </div>
         </div>
+
+        <!-- Right: Image -->
+        <div class="flex justify-center">
+          <img
+            src="https://img.freepik.com/free-vector/global-network-connection-world-map-point-line-composition-representing-globalization-communication-concept_115579-893.jpg"
+            alt="Tech Globe Illustration"
+            class="rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about__content">
-                <div class="section-header">
-                    <h2 class="section-title">About Us</h2>
-                </div>
-                <div class="about__grid">
-                    <div class="about__card">
-                        <h3 class="about__card-title">Who We Are</h3>
-                        <p class="about__text">
-                            SaaviGen.AI is founded by <strong>Nanda</strong>, a cybersecurity leader with <strong>22+ years of experience</strong> at global tech giants like Cisco, HPE, and Aruba. Having built world-class security services, he has pivoted full-time into Generative AI to help organizations adopt AI <strong>productively, securely, and in compliance with emerging regulations</strong>.
-                        </p>
-                    </div>
-                    <div class="about__card">
-                        <h3 class="about__card-title">Our Belief</h3>
-                        <p class="about__text">
-                            AI is not just about speed and automation — it's about <strong>responsible adoption</strong>. Organizations must equip their people with the right <strong>skills, tools, and safeguards</strong> to thrive in the AI-driven world.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <section class="bg-black text-white py-20">
+      <div class="max-w-6xl mx-auto px-6 space-y-20">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          >
+            About Us
+          </h2>
+          <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+            Learn more about our beliefs, our journey, and the vision that
+            drives us forward.
+          </p>
         </div>
+
+        <!-- Row 1 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Text -->
+          <div class="order-2 md:order-1">
+            <h2 class="text-3xl font-bold mb-4">Our Belief</h2>
+            <p class="text-gray-300 leading-relaxed">
+              AI is not just about speed and automation — it's about responsible
+              adoption. Organizations must equip their people with the right
+              skills, tools, and safeguards to thrive in the AI-driven world.
+            </p>
+          </div>
+          <!-- Image -->
+          <div class="order-1 md:order-2">
+            <img
+              src="https://images.unsplash.com/photo-1607706189992-eae578626c86"
+              alt="AI Innovation"
+              class="rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Image -->
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+              alt="AI Solutions"
+              class="rounded-2xl shadow-lg"
+            />
+          </div>
+          <!-- Text -->
+          <div>
+            <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+            <p class="text-gray-300 leading-relaxed">
+              SaaviGen.AI is founded by Nanda, a cybersecurity leader with 22+
+              years of experience at global tech giants like Cisco, HPE, and
+              Aruba. Having built world-class security services, he has pivoted
+              full-time into Generative AI to help organizations adopt AI
+              productively, securely, and in compliance with emerging
+              regulations.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-            </div>
-            <div class="services__grid">
-                <!-- Training Programs -->
-                <div class="service-category">
-                    <div class="service-category__header">
-                        <h3 class="service-category__title">GenAI Training Programs</h3>
-                        <p class="service-category__subtitle">Equip your workforce with the skills to use AI effectively, without compromising security or compliance.</p>
-                    </div>
-                    <div class="service-list">
-                        <div class="service-item">
-                            <h4 class="service-item__title">Fresh Graduate Bootcamps</h4>
-                            <p class="service-item__description">Structured programs to turn fresh out-of-college talent into AI-literate professionals, ready to contribute from day one.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4 class="service-item__title">Corporate Upskilling</h4>
-                            <p class="service-item__description">Hands-on training for employees across functions — from marketing and operations to HR and IT.<br><strong>Focus:</strong> Prompting techniques, AI-powered productivity, safe use of GenAI tools in corporate environments.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4 class="service-item__title">Executive & Manager Workshops</h4>
-                            <p class="service-item__description">Tailored sessions for leaders: how to leverage AI for decision-making, reporting, and productivity while maintaining governance.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4 class="service-item__title">Productivity with AI Tools</h4>
-                            <p class="service-item__description">Practical modules on integrating ChatGPT, Perplexity, Copilot, and other tools into daily workflows.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Compliance Services -->
-                <div class="service-category">
-                    <div class="service-category__header">
-                        <h3 class="service-category__title">AI Security & Compliance Services</h3>
-                        <p class="service-category__subtitle">Stay ahead of regulations and build trust by embedding compliance into your AI strategy.</p>
-                    </div>
-                    <div class="service-list">
-                        <div class="service-item">
-                            <h4 class="service-item__title">AI Security Awareness Workshops</h4>
-                            <p class="service-item__description">Teach employees how to use AI responsibly, avoid risks like data leakage, and follow corporate policies.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4 class="service-item__title">AI Compliance Readiness Assessments</h4>
-                            <p class="service-item__description">Framework-based evaluations aligned with:<br>• India DPDP Act 2023<br>• EU AI Act<br>• ISO/IEC 42001<br>• NIST AI Risk Management Framework</p>
-                        </div>
-                        <div class="service-item">
-                            <h4 class="service-item__title">Audit Preparation & Advisory</h4>
-                            <p class="service-item__description">Helping organizations prepare for internal and external audits by documenting AI usage, governance, and risk controls.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4 class="service-item__title">BFSI & Regulated Industries</h4>
-                            <p class="service-item__description">Special focus on financial institutions, insurers, and fintechs where compliance risk is highest.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Our Services -->
+    <section id="services" class="bg-black text-white py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Section header -->
+        <div class="text-center mb-16">
+          <p class="text-xs tracking-widest uppercase text-neutral-400">
+            What We Do
+          </p>
+          <h2
+            class="mt-2 text-4xl md:text-5xl font-bold bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent"
+          >
+            Our Services
+          </h2>
+          <p class="mt-4 text-neutral-300 max-w-2xl mx-auto">
+            Practical, secure and compliant AI—delivered with a scientist’s
+            precision.
+          </p>
         </div>
+
+        <!-- Timeline wrapper -->
+        <div class="relative">
+          <!-- Center line (desktop) -->
+          <div
+            class="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px bg-neutral-700/60"
+          ></div>
+
+          <!-- Big intro card (acts as first milestone) -->
+          <div class="relative mb-16">
+            <div
+              class="mx-auto max-w-3xl rounded-2xl border border-neutral-800 bg-neutral-900/60 p-8 backdrop-blur"
+            >
+              <div class="flex flex-col gap-4">
+                <h3 class="text-2xl md:text-3xl font-semibold">
+                  AI Enablement Program
+                </h3>
+                <p class="text-neutral-300">
+                  End-to-end enablement—use-case discovery, secure foundations,
+                  guided pilots, and measurable rollout. Built to align with
+                  your risk posture and compliance needs.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
+                    >Governance</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
+                    >Training</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
+                    >Pilots</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Dot on the center line (desktop) -->
+            <span
+              class="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-6 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 1 (left) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
+          >
+            <div class="md:pr-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  GenAI Security & Compliance Assessment
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Map data flows, model risks, and policy gaps. Receive a
+                  prioritized remediation plan aligned to frameworks.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>Threat modeling for prompts & outputs</li>
+                  <li>Policy & access controls</li>
+                  <li>Auditability & logging</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden md:block"></div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 2 (right) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
+          >
+            <div class="hidden md:block"></div>
+            <div class="md:pl-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  Custom AI Assistants (RAG & Agents)
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Domain-tuned assistants with retrieval, tools, and safeguards.
+                  Designed for accuracy and traceability.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>RAG with evaluation harness</li>
+                  <li>Guardrails & red-teaming</li>
+                  <li>Observability & feedback loops</li>
+                </ul>
+              </div>
+            </div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 3 (left) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
+          >
+            <div class="md:pr-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  Data Readiness & Pipelines
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Prepare high-signal corpora, enforce retention, and build
+                  secure ingestion with evaluations baked in.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>PII minimization & masking</li>
+                  <li>Chunking, embeddings, and drift checks</li>
+                  <li>SLAs for freshness & quality</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden md:block"></div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 4 (right) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center"
+          >
+            <div class="hidden md:block"></div>
+            <div class="md:pl-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  Executive Workshops & Change Management
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Upskill leaders and teams. Establish operating principles,
+                  KPIs, and pathways from pilot to scale.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>Strategy & risk frameworks</li>
+                  <li>Role-based enablement</li>
+                  <li>Adoption playbooks</li>
+                </ul>
+              </div>
+            </div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us" id="why-choose-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose SaaviGen.AI?</h2>
-            </div>
-            <div class="features__grid">
-                <div class="feature-card">
-                    <div class="feature-card__icon">🛡️</div>
-                    <h3 class="feature-card__title">22+ Years of Security Expertise</h3>
-                    <p class="feature-card__description">Deep background in cybersecurity & compliance.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">⚙️</div>
-                    <h3 class="feature-card__title">Hands-on GenAI Practitioner</h3>
-                    <p class="feature-card__description">Not theory, but practical training with real-world AI tools.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">🔮</div>
-                    <h3 class="feature-card__title">Future-Ready Compliance Lens</h3>
-                    <p class="feature-card__description">Preparing organizations for upcoming AI regulations before they hit.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">📊</div>
-                    <h3 class="feature-card__title">End-to-End Coverage</h3>
-                    <p class="feature-card__description">From training employees to preparing for compliance audits.</p>
-                </div>
-            </div>
+    <section class="bg-black text-white py-16 px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">What People Say</h2>
+      <div class="relative max-w-3xl mx-auto overflow-hidden">
+        <!-- Testimonials container -->
+        <div
+          id="testimonials-container"
+          class="flex transition-transform duration-700 ease-in-out"
+        >
+          <!-- Testimonial cards -->
+          <div class="min-w-full p-8 text-center">
+            <p class="text-lg italic mb-6">
+              "Savigen AI has transformed the way we approach data-driven
+              research. Truly innovative!"
+            </p>
+            <h4 class="text-xl font-semibold">Dr. Jane Smith</h4>
+            <span class="text-gray-400">AI Researcher</span>
+          </div>
+          <div class="min-w-full p-8 text-center">
+            <p class="text-lg italic mb-6">
+              "The professionalism and scientific approach of Savigen AI is
+              unmatched."
+            </p>
+            <h4 class="text-xl font-semibold">John Doe</h4>
+            <span class="text-gray-400">Tech Entrepreneur</span>
+          </div>
+          <div class="min-w-full p-8 text-center">
+            <p class="text-lg italic mb-6">
+              "Working with Savigen AI boosted our efficiency and accuracy in AI
+              projects."
+            </p>
+            <h4 class="text-xl font-semibold">Emily Carter</h4>
+            <span class="text-gray-400">Data Scientist</span>
+          </div>
         </div>
+
+        <!-- Arrows -->
+        <button
+          id="prev"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 rounded-r-lg hover:bg-gray-700"
+        >
+          ‹
+        </button>
+        <button
+          id="next"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 rounded-l-lg hover:bg-gray-700"
+        >
+          ›
+        </button>
+      </div>
     </section>
 
-    <!-- Use Cases Section -->
-    <section class="use-cases">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Who We Serve</h2>
-            </div>
-            <div class="use-cases__grid">
-                <div class="use-case-card">
-                    <h3 class="use-case-card__title">Corporates</h3>
-                    <p class="use-case-card__description">Upskill employees & managers, boost productivity safely.</p>
-                </div>
-                <div class="use-case-card">
-                    <h3 class="use-case-card__title">Universities & Colleges</h3>
-                    <p class="use-case-card__description">Prepare students for GenAI-driven careers.</p>
-                </div>
-                <div class="use-case-card">
-                    <h3 class="use-case-card__title">Startups</h3>
-                    <p class="use-case-card__description">Adopt AI tools with a compliance-first mindset.</p>
-                </div>
-                <div class="use-case-card">
-                    <h3 class="use-case-card__title">BFSI & Regulated Industries</h3>
-                    <p class="use-case-card__description">Balance innovation with strict governance.</p>
-                </div>
-            </div>
+    <footer class="bg-black text-gray-300 py-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <h2 class="text-2xl font-bold text-white">Savigen AI</h2>
+          <p class="mt-4 text-sm text-gray-400 leading-relaxed">
+            Innovating the future with Artificial Intelligence. We design
+            intelligent solutions that empower businesses worldwide.
+          </p>
         </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What Our Clients Say</h2>
-                <p class="section-subtitle">Client testimonials (placeholder content)</p>
-            </div>
-            <div class="testimonials__grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-card__content">
-                        <p class="testimonial-card__text">"The GenAI training helped our team cut research time by 40%, while also teaching us how to use AI responsibly."</p>
-                        <div class="testimonial-card__author">
-                            <strong>– Corporate Client</strong>
-                            <span class="testimonial-card__note">[Placeholder]</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__content">
-                        <p class="testimonial-card__text">"We understood not just how to use AI, but how to avoid risks like data leaks and compliance violations."</p>
-                        <div class="testimonial-card__author">
-                            <strong>– Workshop Participant</strong>
-                            <span class="testimonial-card__note">[Placeholder]</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-white transition">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition">Our Services</a>
+            </li>
+            <li><a href="#" class="hover:text-white transition">Careers</a></li>
+            <li><a href="#" class="hover:text-white transition">Contact</a></li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Let's Connect</h2>
-            </div>
-            <div class="contact__grid">
-                <div class="contact__info">
-                    <div class="contact__item">
-                        <div class="contact__icon">📧</div>
-                        <div class="contact__details">
-                            <a href="mailto:contact@saavigen.ai" target="_blank" class="contact__link">contact@saavigen.ai</a>
-                        </div>
-                    </div>
-                    <div class="contact__item">
-                        <div class="contact__icon">🌐</div>
-                        <div class="contact__details">
-                            <a href="http://www.saavigen.ai" target="_blank" class="contact__link">www.saavigen.ai</a>
-                        </div>
-                    </div>
-                    <div class="contact__item">
-                        <div class="contact__icon">📍</div>
-                        <div class="contact__details">
-                            <span>India (serving global clients)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact__form">
-                    <form class="form" id="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="organization" class="form-label">Organization</label>
-                            <input type="text" id="organization" name="organization" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
-                    </form>
-                </div>
-            </div>
+        <!-- Resources -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition">Case Studies</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition">Research</a>
+            </li>
+            <li><a href="#" class="hover:text-white transition">Support</a></li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__cta">
-                <h2 class="footer__cta-title">Ready to make AI your competitive advantage — without the risks?</h2>
-                <div class="footer__cta-buttons">
-                    <button class="btn btn--primary btn--lg cta-btn" data-action="training">👉 Book a Corporate Training</button>
-                    <button class="btn btn--outline btn--lg cta-btn" data-action="compliance">👉 Request Compliance Readiness Assessment</button>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__brand">
-                    <div class="footer__logo">SaaviGen.AI</div>
-                    <p class="footer__tagline">Unlock GenAI Productivity — Safely, Responsibly, and Compliantly.</p>
-                </div>
-                <div class="footer__links">
-                    <a href="#home" class="footer__link">Home</a>
-                    <a href="#about" class="footer__link">About</a>
-                    <a href="#services" class="footer__link">Services</a>
-                    <a href="#contact" class="footer__link">Contact</a>
-                </div>
-            </div>
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Get in Touch</h3>
+          <p class="text-sm text-gray-400">
+            Email:
+            <a href="mailto:info@savigen.ai" class="hover:text-white"
+              >info@savigen.ai</a
+            >
+          </p>
+          <p class="text-sm text-gray-400 mt-2">Phone: +91 98765 43210</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-linkedin text-xl"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-twitter text-xl"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-github text-xl"></i
+            ></a>
+          </div>
         </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div
+        class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500"
+      >
+        © 2025 Savigen AI. All Rights Reserved.
+      </div>
     </footer>
 
-    <script src="app.js"></script>
-</body>
+    <script>
+      const container = document.getElementById("testimonials-container");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+      const total = container.children.length;
+      let index = 0;
+
+      function updateSlider() {
+        container.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      // Auto-slide every 4 seconds
+      let autoSlide = setInterval(() => {
+        index = (index + 1) % total;
+        updateSlider();
+      }, 4000);
+
+      // Arrow click navigation
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + total) % total;
+        updateSlider();
+        resetAutoSlide();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % total;
+        updateSlider();
+        resetAutoSlide();
+      });
+
+      function resetAutoSlide() {
+        clearInterval(autoSlide);
+        autoSlide = setInterval(() => {
+          index = (index + 1) % total;
+          updateSlider();
+        }, 4000);
+      }
+    </script>
+  </body>
 </html>
