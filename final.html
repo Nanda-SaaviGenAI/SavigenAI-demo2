@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-black text-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold tracking-wide">
+          Savigen<span class="text-gray-400">AI</span>
+        </div>
+
+        <!-- Links -->
+        <ul class="hidden md:flex space-x-8 text-lg font-medium">
+          <li><a href="#" class="hover:text-gray-400 transition">Home</a></li>
+          <li>
+            <a href="#about" class="hover:text-gray-400 transition">About</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-gray-400 transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-gray-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a
+          href="#contact"
+          class="hidden md:inline-block border border-white px-4 py-2 rounded-lg hover:bg-gray-100 hover:text-black transition"
+        >
+          Get Started
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white focus:outline-none">
+          <!-- Icon (3 bars) -->
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white">
+      <div
+        class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left: Text -->
+        <div>
+          <h1 class="text-5xl font-bold leading-tight mb-6">
+            Powering Businesses with
+            <span class="text-gray-300">AI Innovation</span>
+          </h1>
+          <p class="text-lg text-gray-400 mb-8">
+            Savigen AI helps companies unlock the potential of Artificial
+            Intelligence to automate workflows, make smarter decisions, and
+            scale efficiently.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#services"
+              class="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition"
+            >
+              Get Started
+            </a>
+            <a
+              href="#about"
+              class="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-black transition"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="flex justify-center">
+          <img
+            src="https://img.freepik.com/free-vector/global-network-connection-world-map-point-line-composition-representing-globalization-communication-concept_115579-893.jpg"
+            alt="Tech Globe Illustration"
+            class="rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black text-white py-20">
+      <div class="max-w-6xl mx-auto px-6 space-y-20">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          >
+            About Us
+          </h2>
+          <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+            Learn more about our beliefs, our journey, and the vision that
+            drives us forward.
+          </p>
+        </div>
+
+        <!-- Row 1 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Text -->
+          <div class="order-2 md:order-1">
+            <h2 class="text-3xl font-bold mb-4">Our Belief</h2>
+            <p class="text-gray-300 leading-relaxed">
+              AI is not just about speed and automation — it's about responsible
+              adoption. Organizations must equip their people with the right
+              skills, tools, and safeguards to thrive in the AI-driven world.
+            </p>
+          </div>
+          <!-- Image -->
+          <div class="order-1 md:order-2">
+            <img
+              src="https://images.unsplash.com/photo-1607706189992-eae578626c86"
+              alt="AI Innovation"
+              class="rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Image -->
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+              alt="AI Solutions"
+              class="rounded-2xl shadow-lg"
+            />
+          </div>
+          <!-- Text -->
+          <div>
+            <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+            <p class="text-gray-300 leading-relaxed">
+              SaaviGen.AI is founded by Nanda, a cybersecurity leader with 22+
+              years of experience at global tech giants like Cisco, HPE, and
+              Aruba. Having built world-class security services, he has pivoted
+              full-time into Generative AI to help organizations adopt AI
+              productively, securely, and in compliance with emerging
+              regulations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="bg-black text-white py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Section header -->
+        <div class="text-center mb-16">
+          <p class="text-xs tracking-widest uppercase text-neutral-400">
+            What We Do
+          </p>
+          <h2
+            class="mt-2 text-4xl md:text-5xl font-bold bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent"
+          >
+            Our Services
+          </h2>
+          <p class="mt-4 text-neutral-300 max-w-2xl mx-auto">
+            Practical, secure and compliant AI—delivered with a scientist’s
+            precision.
+          </p>
+        </div>
+
+        <!-- Timeline wrapper -->
+        <div class="relative">
+          <!-- Center line (desktop) -->
+          <div
+            class="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px bg-neutral-700/60"
+          ></div>
+
+          <!-- Big intro card (acts as first milestone) -->
+          <div class="relative mb-16">
+            <div
+              class="mx-auto max-w-3xl rounded-2xl border border-neutral-800 bg-neutral-900/60 p-8 backdrop-blur"
+            >
+              <div class="flex flex-col gap-4">
+                <h3 class="text-2xl md:text-3xl font-semibold">
+                  AI Enablement Program
+                </h3>
+                <p class="text-neutral-300">
+                  End-to-end enablement—use-case discovery, secure foundations,
+                  guided pilots, and measurable rollout. Built to align with
+                  your risk posture and compliance needs.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
+                    >Governance</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
+                    >Training</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
+                    >Pilots</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Dot on the center line (desktop) -->
+            <span
+              class="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-6 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 1 (left) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
+          >
+            <div class="md:pr-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  GenAI Security & Compliance Assessment
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Map data flows, model risks, and policy gaps. Receive a
+                  prioritized remediation plan aligned to frameworks.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>Threat modeling for prompts & outputs</li>
+                  <li>Policy & access controls</li>
+                  <li>Auditability & logging</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden md:block"></div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 2 (right) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
+          >
+            <div class="hidden md:block"></div>
+            <div class="md:pl-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  Custom AI Assistants (RAG & Agents)
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Domain-tuned assistants with retrieval, tools, and safeguards.
+                  Designed for accuracy and traceability.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>RAG with evaluation harness</li>
+                  <li>Guardrails & red-teaming</li>
+                  <li>Observability & feedback loops</li>
+                </ul>
+              </div>
+            </div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 3 (left) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
+          >
+            <div class="md:pr-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  Data Readiness & Pipelines
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Prepare high-signal corpora, enforce retention, and build
+                  secure ingestion with evaluations baked in.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>PII minimization & masking</li>
+                  <li>Chunking, embeddings, and drift checks</li>
+                  <li>SLAs for freshness & quality</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden md:block"></div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+
+          <!-- Item 4 (right) -->
+          <div
+            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center"
+          >
+            <div class="hidden md:block"></div>
+            <div class="md:pl-12">
+              <div
+                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
+              >
+                <h4 class="text-xl font-semibold">
+                  Executive Workshops & Change Management
+                </h4>
+                <p class="mt-2 text-neutral-300">
+                  Upskill leaders and teams. Establish operating principles,
+                  KPIs, and pathways from pilot to scale.
+                </p>
+                <ul
+                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
+                >
+                  <li>Strategy & risk frameworks</li>
+                  <li>Role-based enablement</li>
+                  <li>Adoption playbooks</li>
+                </ul>
+              </div>
+            </div>
+            <span
+              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
