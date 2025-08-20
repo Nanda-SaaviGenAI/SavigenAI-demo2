@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-sans flex flex-col min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-black text-white shadow-md">
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <a href="index.html" class="text-2xl font-bold"
+          ><div class="text-2xl font-bold tracking-wide">
+            Savigen<span class="text-gray-400">AI</span>
+          </div></a
+        >
+        <ul class="flex space-x-6 font-bold tracking-wide">
+          <li>
+            <a class="hover:text-gray-400 transition" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400 transition" href="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-gray-400 transition" href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <main class="flex-grow">
+      <section class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <form class="bg-gray-900 p-8 rounded-lg shadow-lg space-y-6">
+            <div>
+              <label class="block text-sm mb-2">Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full px-4 py-2 rounded-lg bg-black border border-gray-700 text-white focus:outline-none focus:border-white"
+              />
+            </div>
+            <div>
+              <label class="block text-sm mb-2">Email</label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                class="w-full px-4 py-2 rounded-lg bg-black border border-gray-700 text-white focus:outline-none focus:border-white"
+              />
+            </div>
+            <div>
+              <label class="block text-sm mb-2">Message</label>
+              <textarea
+                rows="5"
+                placeholder="Your Message"
+                class="w-full px-4 py-2 rounded-lg bg-black border border-gray-700 text-white focus:outline-none focus:border-white"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <!-- Contact Info -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Contact Information</h3>
+            <p class="text-gray-300">
+              We’d love to hear from you. Reach out using the form or through
+              the details below:
+            </p>
+            <ul class="space-y-4">
+              <li>
+                <span class="font-semibold">Email:</span> contact@mycompany.com
+              </li>
+              <li><span class="font-semibold">Phone:</span> +91 98765 43210</li>
+              <li>
+                <span class="font-semibold">Address:</span> 123 Business Street,
+                Chennai, India
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-black text-gray-400 py-6 text-center border-t border-gray-800"
+    >
+      <p>&copy; 2025 MyCompany. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
