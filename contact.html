@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>SavigenAI Contact</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="bg-black text-white font-sans flex flex-col min-h-screen">
     <!-- HEADER -->
@@ -19,17 +20,17 @@
         >
         <ul class="flex space-x-6 font-medium tracking-wide">
           <li>
-            <a class="hover:text-gray-400 transition" href="index.html">Home</a>
+            <a class="hover:text-gray-400 transition" href="/index.html"
+              >Home</a
+            >
           </li>
           <li>
-            <a class="hover:text-gray-400 transition" href="about.html"
+            <a class="hover:text-gray-400 transition" href="/index.html"
               >About</a
             >
           </li>
           <li>
-            <a class="hover:text-gray-400 transition" href="contact.html"
-              >Contact</a
-            >
+            <a class="hover:text-gray-400 transition" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -42,7 +43,10 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <!-- Contact Form -->
-          <form class="bg-gray-900 p-8 rounded-lg shadow-lg space-y-6">
+          <form
+            class="bg-gray-900 p-8 rounded-lg shadow-lg space-y-6"
+            data-aos="fade-right"
+          >
             <div>
               <label class="block text-sm mb-2">Name</label>
               <input
@@ -76,7 +80,7 @@
           </form>
 
           <!-- Contact Info -->
-          <div class="space-y-6">
+          <div class="space-y-6" data-aos="fade-left">
             <h3 class="text-2xl font-semibold">Contact Information</h3>
             <p class="text-gray-300">
               We’d love to hear from you. Reach out using the form or through
@@ -103,5 +107,9 @@
     >
       <p>&copy; 2025 MyCompany. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
