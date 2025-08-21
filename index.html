@@ -166,7 +166,8 @@
 
     <!-- Our Services -->
     <section id="services" class="bg-black text-white py-20">
-      <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Header -->
         <!-- Section header -->
         <div class="text-center mb-16">
           <p class="text-xs tracking-widest uppercase text-neutral-400">
@@ -183,171 +184,102 @@
           </p>
         </div>
 
-        <!-- Timeline wrapper -->
-        <div class="relative">
-          <!-- Center line (desktop) -->
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- GenAI Training Programs -->
           <div
-            class="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px bg-neutral-700/60"
-          ></div>
-
-          <!-- Big intro card (acts as first milestone) -->
-          <div class="relative mb-16" data-aos="fade-up">
-            <div
-              class="mx-auto max-w-3xl rounded-2xl border border-neutral-800 bg-neutral-900/60 p-8 backdrop-blur"
-            >
-              <div class="flex flex-col gap-4">
-                <h3 class="text-2xl md:text-3xl font-semibold">
-                  AI Enablement Program
-                </h3>
-                <p class="text-neutral-300">
-                  End-to-end enablement—use-case discovery, secure foundations,
-                  guided pilots, and measurable rollout. Built to align with
-                  your risk posture and compliance needs.
-                </p>
-                <div class="mt-2 flex flex-wrap gap-2">
-                  <span
-                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
-                    >Governance</span
-                  >
-                  <span
-                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
-                    >Training</span
-                  >
-                  <span
-                    class="text-xs px-3 py-1 rounded-full border border-neutral-700 text-neutral-300"
-                    >Pilots</span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Dot on the center line (desktop) -->
-            <span
-              class="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-6 w-3 h-3 rounded-full bg-white ring-4 ring-black"
-            ></span>
-          </div>
-
-          <!-- Item 1 (left) -->
-          <div
+            class="bg-neutral-900 border border-white/10 rounded-xl p-8 shadow-lg"
             data-aos="fade-right"
-            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
           >
-            <div class="md:pr-12">
-              <div
-                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
-              >
-                <h4 class="text-xl font-semibold">
-                  GenAI Security & Compliance Assessment
-                </h4>
-                <p class="mt-2 text-neutral-300">
-                  Map data flows, model risks, and policy gaps. Receive a
-                  prioritized remediation plan aligned to frameworks.
+            <h3 class="text-2xl font-semibold mb-4">GenAI Training Programs</h3>
+            <p class="text-sm text-gray-300 mb-8">
+              Equip your workforce with the skills to use AI effectively,
+              without compromising security or compliance.
+            </p>
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-semibold">Fresh Graduate Bootcamps</h4>
+                <p class="text-gray-400 text-sm">
+                  Structured programs to turn fresh out-of-college talent into
+                  AI-literate professionals, ready to contribute from day one.
                 </p>
-                <ul
-                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
-                >
-                  <li>Threat modeling for prompts & outputs</li>
-                  <li>Policy & access controls</li>
-                  <li>Auditability & logging</li>
-                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold">Corporate Upskilling</h4>
+                <p class="text-gray-400 text-sm">
+                  Hands-on training for employees across functions — from
+                  marketing and operations to HR and IT.
+                  <br /><span class="italic"
+                    >Focus: Prompting techniques, AI-powered productivity, safe
+                    use of GenAI tools.</span
+                  >
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold">Executive & Manager Workshops</h4>
+                <p class="text-gray-400 text-sm">
+                  Tailored sessions for leaders: how to leverage AI for
+                  decision-making, reporting, and productivity while maintaining
+                  governance.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold">Productivity with AI Tools</h4>
+                <p class="text-gray-400 text-sm">
+                  Practical modules on integrating ChatGPT, Perplexity, Copilot,
+                  and other tools into daily workflows.
+                </p>
               </div>
             </div>
-            <div class="hidden md:block"></div>
-            <span
-              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
-            ></span>
           </div>
 
-          <!-- Item 2 (right) -->
+          <!-- AI Security & Compliance -->
           <div
             data-aos="fade-left"
-            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
+            class="bg-neutral-900 border border-white/10 rounded-xl p-8 shadow-lg"
           >
-            <div class="hidden md:block"></div>
-            <div class="md:pl-12">
-              <div
-                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
-              >
-                <h4 class="text-xl font-semibold">
-                  Custom AI Assistants (RAG & Agents)
-                </h4>
-                <p class="mt-2 text-neutral-300">
-                  Domain-tuned assistants with retrieval, tools, and safeguards.
-                  Designed for accuracy and traceability.
+            <h3 class="text-2xl font-semibold mb-4">
+              AI Security & Compliance Services
+            </h3>
+            <p class="text-sm text-gray-300 mb-8">
+              Stay ahead of regulations and build trust by embedding compliance
+              into your AI strategy.
+            </p>
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-semibold">AI Security Awareness Workshops</h4>
+                <p class="text-gray-400 text-sm">
+                  Teach employees how to use AI responsibly, avoid risks like
+                  data leakage, and follow corporate policies.
                 </p>
-                <ul
-                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
-                >
-                  <li>RAG with evaluation harness</li>
-                  <li>Guardrails & red-teaming</li>
-                  <li>Observability & feedback loops</li>
-                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold">
+                  AI Compliance Readiness Assessments
+                </h4>
+                <p class="text-gray-400 text-sm">
+                  Framework-based evaluations aligned with:<br />
+                  • India DPDP Act 2023<br />
+                  • EU AI Act<br />
+                  • ISO/IEC 42001<br />
+                  • NIST AI Risk Management Framework
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold">Audit Preparation & Advisory</h4>
+                <p class="text-gray-400 text-sm">
+                  Helping organizations prepare for internal and external audits
+                  by documenting AI usage, governance, and risk controls.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold">BFSI & Regulated Industries</h4>
+                <p class="text-gray-400 text-sm">
+                  Special focus on financial institutions, insurers, and
+                  fintechs where compliance risk is highest.
+                </p>
               </div>
             </div>
-            <span
-              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
-            ></span>
-          </div>
-
-          <!-- Item 3 (left) -->
-          <div
-            data-aos="fade-right"
-            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center mb-12 md:mb-20"
-          >
-            <div class="md:pr-12">
-              <div
-                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
-              >
-                <h4 class="text-xl font-semibold">
-                  Data Readiness & Pipelines
-                </h4>
-                <p class="mt-2 text-neutral-300">
-                  Prepare high-signal corpora, enforce retention, and build
-                  secure ingestion with evaluations baked in.
-                </p>
-                <ul
-                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
-                >
-                  <li>PII minimization & masking</li>
-                  <li>Chunking, embeddings, and drift checks</li>
-                  <li>SLAs for freshness & quality</li>
-                </ul>
-              </div>
-            </div>
-            <div class="hidden md:block"></div>
-            <span
-              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
-            ></span>
-          </div>
-
-          <!-- Item 4 (right) -->
-          <div
-            data-aos="fade-left"
-            class="relative md:grid md:grid-cols-2 md:gap-12 md:items-center"
-          >
-            <div class="hidden md:block"></div>
-            <div class="md:pl-12">
-              <div
-                class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/70 transition"
-              >
-                <h4 class="text-xl font-semibold">
-                  Executive Workshops & Change Management
-                </h4>
-                <p class="mt-2 text-neutral-300">
-                  Upskill leaders and teams. Establish operating principles,
-                  KPIs, and pathways from pilot to scale.
-                </p>
-                <ul
-                  class="mt-4 space-y-1 text-sm text-neutral-400 list-disc pl-5"
-                >
-                  <li>Strategy & risk frameworks</li>
-                  <li>Role-based enablement</li>
-                  <li>Adoption playbooks</li>
-                </ul>
-              </div>
-            </div>
-            <span
-              class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white ring-4 ring-black"
-            ></span>
           </div>
         </div>
       </div>
