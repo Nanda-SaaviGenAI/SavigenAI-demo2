@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <!-- Links -->
+        <!-- Desktop Links -->
         <ul class="hidden md:flex space-x-8 text-lg font-medium">
           <li><a href="#" class="hover:text-gray-400 transition">Home</a></li>
           <li>
@@ -44,7 +44,7 @@
           </li>
         </ul>
 
-        <!-- CTA Button -->
+        <!-- CTA Button (Desktop Only) -->
         <a
           href="#contact"
           class="hidden md:inline-block border border-white px-4 py-2 rounded-lg hover:bg-gray-100 hover:text-black transition"
@@ -53,10 +53,10 @@
         </a>
 
         <!-- Mobile Menu Button -->
-        <button class="md:hidden text-white focus:outline-none">
-          <!-- Icon (3 bars) -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
           <svg
-            class="w-6 h-6"
+            id="menu-icon"
+            class="w-7 h-7"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -69,6 +69,41 @@
             />
           </svg>
         </button>
+      </div>
+
+      <!-- Mobile Dropdown with Transition -->
+      <div
+        id="mobile-menu"
+        class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:hidden bg-black px-6"
+      >
+        <ul class="py-4 space-y-4 text-lg font-medium">
+          <li>
+            <a href="#" class="block hover:text-gray-400 transition">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="block hover:text-gray-400 transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="block hover:text-gray-400 transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="block hover:text-gray-400 transition"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block border border-white px-4 py-2 rounded-lg hover:bg-gray-100 hover:text-black transition"
+            >
+              Get Started
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -496,6 +531,30 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      let menuOpen = false;
+
+      menuBtn.addEventListener("click", () => {
+        menuOpen = !menuOpen;
+
+        if (menuOpen) {
+          mobileMenu.classList.remove("max-h-0");
+          mobileMenu.classList.add("max-h-96"); // expand
+          // Switch to "X" icon
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>`;
+        } else {
+          mobileMenu.classList.remove("max-h-96");
+          mobileMenu.classList.add("max-h-0"); // collapse
+          // Switch back to hamburger
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>`;
+        }
+      });
     </script>
   </body>
 </html>

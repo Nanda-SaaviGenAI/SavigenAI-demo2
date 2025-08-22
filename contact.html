@@ -14,15 +14,20 @@
       <nav
         class="container mx-auto flex justify-between items-center py-4 px-6"
       >
-        <a href="index.html" class="text-2xl font-bold">
-          <div class="flex gap-2 items-center">
-            <img src="assets/logo.png" class="h-20" alt="SaaviGenAI Logo" />
-            <div class="text-2xl font-bold tracking-wide">
-              SaaviGen<span class="text-gray-400">AI</span>
-            </div>
+        <!-- Logo -->
+        <a href="index.html" class="flex gap-2 items-center">
+          <img
+            src="assets/logo.png"
+            class="h-16 md:h-20"
+            alt="SaaviGenAI Logo"
+          />
+          <div class="text-2xl font-bold tracking-wide">
+            SaaviGen<span class="text-gray-400">AI</span>
           </div>
         </a>
-        <ul class="flex space-x-6 font-medium tracking-wide">
+
+        <!-- Desktop Links -->
+        <ul class="hidden md:flex space-x-6 font-medium tracking-wide">
           <li>
             <a class="hover:text-gray-400 transition" href="/index.html"
               >Home</a
@@ -37,7 +42,47 @@
             <a class="hover:text-gray-400 transition" href="#">Contact</a>
           </li>
         </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            id="menu-icon"
+            class="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </nav>
+
+      <!-- Mobile Dropdown with Transition -->
+      <div
+        id="mobile-menu"
+        class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:hidden bg-black px-6"
+      >
+        <ul class="py-4 space-y-4 font-medium tracking-wide">
+          <li>
+            <a class="block hover:text-gray-400 transition" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="block hover:text-gray-400 transition" href="/index.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="block hover:text-gray-400 transition" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- CONTACT SECTION -->
@@ -115,6 +160,29 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      let menuOpen = false;
+
+      menuBtn.addEventListener("click", () => {
+        menuOpen = !menuOpen;
+
+        if (menuOpen) {
+          mobileMenu.classList.remove("max-h-0");
+          mobileMenu.classList.add("max-h-96"); // expands smoothly
+          // Switch to "X" icon
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>`;
+        } else {
+          mobileMenu.classList.remove("max-h-96");
+          mobileMenu.classList.add("max-h-0");
+          // Switch back to hamburger
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>`;
+        }
+      });
     </script>
   </body>
 </html>
