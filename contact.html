@@ -2,33 +2,187 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Contact Us | SaaviGenAI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+    <title>SaaviGenAI Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
   </head>
-  <body class="bg-black text-white font-sans">
-    <div class="max-w-xl mx-auto py-20 px-6">
-      <h1 class="text-4xl font-bold mb-6">Contact Us</h1>
-      <p class="mb-8 text-gray-300">
-        We'd love to hear from you! Please reach out using the details below.
-      </p>
-      <div class="mb-4">
-        <span class="font-semibold">Email:</span>
-        <a
-          href="mailto:contact@SaaviGen.AI"
-          class="text-blue-400 hover:underline"
-          >contact@SaaviGen.AI</a
-        >
-      </div>
-      <div class="mb-4">
-        <span class="font-semibold">Phone:</span>
-        <span class="text-gray-300">+91 9742266597</span>
-      </div>
-      <a
-        href="index.html"
-        class="text-blue-400 hover:underline"
-        >← Back to Home</a
+  <body class="bg-black text-white font-sans flex flex-col min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-black text-white shadow-md">
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
       >
-    </div>
+        <!-- Logo -->
+        <a href="index.html" class="flex gap-2 items-center">
+          <img
+            src="assets/logo.png"
+            class="h-16 md:h-20"
+            alt="SaaviGenAI Logo"
+          />
+          <div class="text-2xl font-bold tracking-wide">
+            SaaviGen<span class="text-gray-400">AI</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="hidden md:flex space-x-6 font-medium tracking-wide">
+          <li>
+            <a class="hover:text-gray-400 transition" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-gray-400 transition" href="/index.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-gray-400 transition" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            id="menu-icon"
+            class="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Dropdown with Transition -->
+      <div
+        id="mobile-menu"
+        class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:hidden bg-black px-6"
+      >
+        <ul class="py-4 space-y-4 font-medium tracking-wide">
+          <li>
+            <a class="block hover:text-gray-400 transition" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="block hover:text-gray-400 transition" href="/index.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="block hover:text-gray-400 transition" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <main class="flex-grow">
+      <section class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
+
+        <div class="flex flex-row justify-center pt-10">
+          <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-12"> -->
+          <!-- Contact Form -->
+          <!-- <form
+            class="bg-gray-900 p-8 rounded-lg shadow-lg space-y-6"
+            data-aos="fade-right"
+          >
+            <div>
+              <label class="block text-sm mb-2">Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full px-4 py-2 rounded-lg bg-black border border-gray-700 text-white focus:outline-none focus:border-white"
+              />
+            </div>
+            <div>
+              <label class="block text-sm mb-2">Email</label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                class="w-full px-4 py-2 rounded-lg bg-black border border-gray-700 text-white focus:outline-none focus:border-white"
+              />
+            </div>
+            <div>
+              <label class="block text-sm mb-2">Message</label>
+              <textarea
+                rows="5"
+                placeholder="Your Message"
+                class="w-full px-4 py-2 rounded-lg bg-black border border-gray-700 text-white focus:outline-none focus:border-white"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
+            >
+              Send Message
+            </button>
+          </form> -->
+
+          <!-- Contact Info -->
+          <div class="space-y-6 text-center" data-aos="fade-up">
+            <h3 class="text-2xl font-semibold">Contact Information</h3>
+            <p class="text-gray-300">
+              We’d love to hear from you. Reach out using the form or through
+              the details below:
+            </p>
+            <ul class="space-y-4">
+              <li>
+                <span class="font-semibold">Email:</span> contact@SaaviGen.AI
+              </li>
+              <li><span class="font-semibold">Phone:</span> +91 9742266597</li>
+              <!-- <li>
+                <span class="font-semibold">Address:</span> 123 Business Street,
+                Chennai, India
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-black text-gray-400 py-6 text-center border-t border-gray-800"
+    >
+      <p>&copy; 2025 SaaviGenAI. All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      let menuOpen = false;
+
+      menuBtn.addEventListener("click", () => {
+        menuOpen = !menuOpen;
+
+        if (menuOpen) {
+          mobileMenu.classList.remove("max-h-0");
+          mobileMenu.classList.add("max-h-96"); // expands smoothly
+          // Switch to "X" icon
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>`;
+        } else {
+          mobileMenu.classList.remove("max-h-96");
+          mobileMenu.classList.add("max-h-0");
+          // Switch back to hamburger
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>`;
+        }
+      });
+    </script>
   </body>
 </html>
